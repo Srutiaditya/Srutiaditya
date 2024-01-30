@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    char str[100];
+    int i,n;
+    printf("Enter the String:");
+    fgets(str,sizeof(str),stdin);
+    for(int i=0;str[i]!='\0';i++)
+    {
+        n=isupper(str[i])?tolower(str[i]):toupper(str[i]);
+        putchar(n);
+    }
+}
