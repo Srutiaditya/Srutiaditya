@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+
+{
+    char str[50];char temp1[20],temp2[20];int a=0,b=0,i;
+    printf("Enter text:");
+    gets(str);
+    int len1=strlen(str);
+    for(i=0;i<len1;i++)
+    {
+        if(str[i]!=' ')
+        {
+            temp1[a]=str[i];
+            a++;
+        }
+        else
+            break;
+    }
+    for(i=a+1;i<len1;i++)
+    {
+        do
+        {
+            temp2[b]=str[i];
+            b++;
+        }while(temp2[b]!='\0');
+    }
+    printf("%s %s",temp2,temp1);
+}
