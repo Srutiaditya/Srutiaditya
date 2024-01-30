@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+int main()
+{
+int n,rev=0,left;
+printf("enter the value:");
+scanf("%d",&n);
+while(n!=0)
+{
+    left=n%10;
+    rev=rev*10+left;
+    n=n/10;
+}
+printf("the reversimg value is:%d",rev);
+return 0;
+}
