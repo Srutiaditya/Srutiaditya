@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int fac;
+    printf("Enter the number:");
+    scanf("%d",&fac);
+    for(int i=1;i<=fac;i++)
+    {
+        if(fac%i==0)
+        {
+            printf("%d,",i);
+        }
+    
+    }
+}
