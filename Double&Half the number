@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    printf("Double the numberof:%d is %d\n",n,n<<1);
+    printf("Half the numberof:%d is %d",n,n>>1);
+}
