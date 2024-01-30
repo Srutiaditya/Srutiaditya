@@ -1,0 +1,18 @@
+//distance b/w 2 city (in km) is i/p .To convert and print the meter , cm.inch,feet...
+#include<stdio.h>
+int main()
+{
+    float km,m,cm,inch,feet;
+    printf("Enter the Kilometer:");
+    scanf("%f",&km);
+    m=km*1000;
+    cm=m*100;
+    inch=cm/2.54;
+    feet=inch/12;
+    printf("\n KM:%0.2f",km);
+    printf("\n M:%0.2f",m);
+    printf("\n CM:%0.2f",cm);
+    printf("\n INCH:%0.2f",inch);
+    printf("\n FEET:%0.2f",feet);
+    
+}
