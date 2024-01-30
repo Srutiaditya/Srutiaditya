@@ -1,0 +1,33 @@
+/*Reverse String Word Wise
+Write a function to reverse a string word-wise.
+Input Specification:
+input1: String
+Output Specification:
+Return the reversed string that is, the last word in input string should come at the first position of the 
+output string, second last word at the second position and so on. Individual words should remain as it 
+is.
+Example 1:
+Input1: Welcome to mettl
+Output: mettl to Welcome
+Explanation:
+Welcome is the first word of the string and hence is placed at the last position in the output string. 
+Similarly, with to and mettl which get placed at the second and first position respectively in the 
+output string*/
+#include <stdio.h>
+#include<string.h>
+
+int main() 
+{
+   char str[100];
+   gets(str);
+   int length=strlen(str);
+   for(int i=length-1;i>=0;i--)
+   {
+       if(str[i]==' ')
+       {
+           str[i]='\0';
+           printf("%s ",&(str[i])+1);
+       }
+   }
+   printf("%s",str);
+}
