@@ -1,0 +1,6 @@
+/*print "hello" usinf if statement and without semi-colun..*/
+#include<stdio.h>
+int main()
+{
+    if(printf("Hello")){}
+}
