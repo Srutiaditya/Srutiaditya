@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,n,sum=0,cube,rem;
+    printf("Enter the value:");
+    scanf("%d",&a);
+    n=a;
+    while(a!=0)
+    {
+        rem=a%10;
+        cube=rem*rem*rem;
+        sum=sum+cube;
+        a=a/10;
+    }
+    if(n==sum)
+    {
+        printf("Armstrong Number");
+    }
+    else
+    {
+        printf("Not a Armstrong");
+    }
+}
