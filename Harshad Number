@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n,temp,rem,sum=0;
+    printf("Enter the value:");
+    scanf("%d",&n);
+    int a=n;
+    while(a!=0)
+    {
+        rem=a%10;
+        sum=sum+rem;
+        a=a/10;
+    }
+    if(n%sum==0)
+    {
+        printf("Harshad Number");
+    }
+    else
+    {
+        printf("Not harshad Number");
+    }
+}
