@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int a,rem,sqt,sum=0;
+    printf("enetr the value:");
+    scanf("%d",&a);
+    sqt=a*a;
+    while(sqt!=0)
+    {
+ 
+        rem=sqt%10;
+        sum=sum+rem;
+        sqt=sqt/10;
+        
+    }
+    if(sum==a)
+    {
+       printf("Neon Number:%d",sum); 
+    }
+    else
+    {
+      printf("Not Neon Number:%d",sum);
+    }
+    
+}
